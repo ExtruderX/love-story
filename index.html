@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>22 Şubat 2025</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background music (starts after user interaction) -->
+  <audio id="bgm" preload="auto" loop>
+    <source src="assets/music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <main class="app">
+    <!-- HERO / STAR MAP -->
+    <section id="hero" class="screen active">
+      <div class="bg" style="background-image:url('assets/star-map.jpg')"></div>
+      <div class="overlay"></div>
+
+      <div class="hero-content">
+        <h1 class="fade-in" id="heroText">
+          22 Şubat 2025 gecesi,<br/>
+          gökyüzü tam olarak böyleydi.
+        </h1>
+
+        <div class="hero-actions">
+          <button id="playMusic" class="btn secondary">Müziği Başlat ♪</button>
+          <button id="nextFromHero" class="btn primary">İleri →</button>
+        </div>
+
+        <p class="hint">Not: Müzik tarayıcı kuralı gereği ilk tıklamayla başlar.</p>
+      </div>
+    </section>
+
+    <!-- STORY / TIMELINE -->
+    <section id="story" class="screen">
+      <div class="story-wrap">
+        <div class="topbar">
+          <div class="counter" id="counter">1 / 1</div>
+          <div class="topbar-actions">
+            <button id="toggleMusic" class="btn tiny">♫</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="photo">
+            <img id="slideImg" alt="Anı fotoğrafı" />
+          </div>
+          <div class="text">
+            <div class="month" id="slideMonth">Mart 2025</div>
+            <div class="desc" id="slideDesc">Buraya açıklama gelecek.</div>
+          </div>
+        </div>
+
+        <div class="nav">
+          <button id="prev" class="btn secondary">← Geri</button>
+          <button id="next" class="btn primary">İleri →</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
